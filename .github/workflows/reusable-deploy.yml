@@ -20,7 +20,7 @@ jobs:
       step-result: ${{ steps.set-output.outputs.result }}
     steps:
       - name: Get build artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: ${{ inputs.artifact-name }}
       - name: Output contents
